@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+body, button, input{
+    font-family: "DM Sans", sans-serif;
+}
+
+button {
+    background-color: #FF9500;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0.4rem 0.4rem 0;
+    cursor: pointer;
+
+    transition: background .3;
+}
+
+button:hover {
+    background-color: #b67519;
+}
+
+.hide{
+    display: none;
+}
+
+main{
+   background: white;
+   box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.1); 
+   border-radius: 6px;
+   padding: 4.8rem 6.4rem 6.4rem;
+
+   width: min(42.8rem, 90%);
+   margin-top: -12rem;
+
+   text-align: center;
+}
+/*screen1*/
+h1{
+    font-family: "Montserrat", sans-serif;
+    
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+h1, p {
+   color: #34355b; 
+}
+
+p {
+    opacity: 0.8;
+}
+
+form{
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, button {
+    border: none;
+    padding: 1.6rem;
+    
+}
+
+input {
+    background-color: #dce2e9;
+    width: 6rem;
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+/*screen2*/
+
+#box{
+    width: 29.3rem;
+    background: #E4EDF1;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    animation-name: open, move;
+    animation-fill-mode: forwards, forwards;
+    animation-duration: 2s, 2s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    
+
+}
+
+h2{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+
+    
+}
+
+.screen2 button{
+    border-radius: .4rem;
+}
+
+.screen1 img{
+    margin-top: 2rem;
+}
+
+.screen1 img:hover {
+    animation-name: blink;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move{
+/* from */
+from {
+    
+    transform: translatey(calc(100px));
+}
+
+to {
+    
+}
+
+
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        
+    }
+    100%{
+
+    }
+}
+
+@keyframes blink {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+
+    }
+}
